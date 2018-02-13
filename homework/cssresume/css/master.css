@@ -1,4 +1,29 @@
 body {
-  background: aqua;
+  background: white;
+}
 
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.company {
+  color: red;
+}
+
+#name {
+  color: blue;
+}
+
+#major {
+  color: maroon;
+}
+
+.heading {
+  color: orange;
 }
