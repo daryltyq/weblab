@@ -16,6 +16,33 @@ a:hover {
   color: red;
 }
 
+.heading {
+  color: orange;
+}
+
+.bullet {
+  background: lightblue;
+  width: 1000px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.work {
+  background: lightblue;
+  width: 1000px;
+  height: 70px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.wdes {
+  font-style: italic;
+  color: darkorange;
+}
+
 #name {
   color: blue;
 }
@@ -24,14 +51,10 @@ a:hover {
   color: maroon;
 }
 
-.heading {
-  color: orange;
-}
-
 h1:hover {
   background-color: yellow;
 }
 
-h1{
+h1 {
   font-family: 'Bitter', serif;
 }
