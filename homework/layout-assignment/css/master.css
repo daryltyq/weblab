@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+
+.heading {
+  background-color: purple;
+  padding: 40px;
+}
+
+.main-head {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: orange;
+  font-size: 25px;
+  text-decoration: none;
+
+}
