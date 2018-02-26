@@ -1,21 +1,37 @@
-.container {
-  display: grid;
-  grid-gap: 10px;
-
-.heading {
-  background-color: purple;
-  padding: 40px;
-}
-
 .main-head {
-  font-size: 50px;
-  color: white;
-  text-align: center;
+  grid-area: header;
 }
 
-a {
-  color: orange;
-  font-size: 25px;
+.main-nav {
+  grid-area: nav;
+
+background: yellow;
+text-align: center;
+margin-top: 20px;
+}
+
+.main-nav a {
+  background: lightblue;
+  width: 40%;
+  display: inline-block;
+  padding: 10px;
   text-decoration: none;
+}
+
+.main-nav a:hover {
+  background: pink;
+}
+
+.row {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  background: teal;
+}
+
+.content {
+  display: grid;
+  background: gray;
+  padding: 10px;
 
 }
