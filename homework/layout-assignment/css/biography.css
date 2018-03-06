@@ -49,31 +49,28 @@
   grid-gap: 10px;
   grid-auto-rows: 400px;
   grid-template-columns: 200px 1fr;
-  background: gray;
-  background-image: url(../images/dj.jpg);
+  background: aqua;
+  background-image: url(../images/selfdj.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .left h2 {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   font-family: fantasy;
 }
 
 .right {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0px;
   grid-auto-rows: 400px;
-  grid-template-columns: 200px 1fr;
-  background: aqua;
-  background-image: url(../images/production.jpg);
-  background-size: cover;
-  background-position: center;
+  grid-template-columns: 350px 1fr;
+  background: teal;
 }
 
-.right h2 {
-  font-size: 30px;
-  font-family: fantasy;
+.right p {
   color: white;
+  font-size: 20px;
+  font-family: fantasy;
 }
