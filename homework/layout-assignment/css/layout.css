@@ -1,12 +1,11 @@
 /* Mobile Layout */
 
-
-.wrapper {
+.content {
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 5px;
   grid-template-areas:
     "header"
-    "main-nav"
+    "nav"
     "row"
     "content"
     "left"
@@ -17,28 +16,29 @@
 /* tablet layout */
 
 @media (min-width: 500px) {
-.wrapper {
+.content {
   display: grid;
-  grid-template-columns: 3fr 0fr;
-  grid-template-rows: 0fr 0fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr;
   grid-template-areas:
-    "header  header"
-    "nav     nav"
-    "row     row"
-    "content content"
-    "left    right";
+    "header"
+    "nav"
+    "row"
+    "content"
+    "left"
+    "right";
 }
 
 
 /* Desktop layout */
 
-
 @media (min-width: 700px) {
-.wrapper {
-  grid-template-columns: 1fr 0fr 1fr;
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
   grid-template-areas:
-    "header header  header"
-    "nav    content sidebar"
-    "nav    content ad"
-    "footer footer  footer"
+    "header header"
+    "nav    nav"
+    "content    content"
+    "footer footer"
  }
