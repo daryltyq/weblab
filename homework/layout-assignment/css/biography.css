@@ -47,10 +47,10 @@
 .left {
   display: grid;
   grid-gap: 10px;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 350px;
   grid-template-columns: 200px 1fr;
   background: aqua;
-  background-image: url(../images/selfdj.jpg);
+  background-image: url(../images/me.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -64,7 +64,7 @@
 .right {
   display: grid;
   grid-gap: 0px;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 350px;
   grid-template-columns: 350px 1fr;
   background: teal;
 }

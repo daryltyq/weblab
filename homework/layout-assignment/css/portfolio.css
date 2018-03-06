@@ -1,0 +1,78 @@
+.row {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  background: teal;
+}
+
+.main-head {
+  grid-area: header;
+}
+
+.main-head h1{
+  font-size: 35px;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.main-nav {
+  grid-area: nav;
+  background: teal;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-nav a {
+  background: lightblue;
+  width: 25%;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+}
+
+.main-nav a:hover {
+  background: aqua;
+}
+
+.content {
+  display: grid;
+  padding: 10px;
+}
+
+.left {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: 300px;
+  grid-template-columns: 200px 1fr;
+  background: aqua;
+  background-image: url(../images/patiodj.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: 300px;
+  grid-template-columns: 200px 1fr;
+  background: gray;
+  background-image: url(../images/selfdj.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: 300px;
+  grid-template-columns: 200px 1fr;
+  background: gray;
+  background-image: url(../images/patiodj2.jpg);
+  background-size: cover;
+  background-position: center;
+}
