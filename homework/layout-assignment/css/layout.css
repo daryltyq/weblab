@@ -38,7 +38,7 @@
   grid-template-columns: 1fr 1fr ;
   grid-template-areas:
     "header header"
-    "nav    nav"
-    "content    content"
+    "nav nav"
+    "content content"
     "footer footer"
  }
