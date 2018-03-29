@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Website</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+
+<div class="box">
+  Instructions go here!
+</div>
+<br>
+<a href="#" id="first">First Step</a> | <a href="#" id="second">Second Step</a> | <a href="#" id="hide">Hide</a> | <a href="#" id="show">Show</a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $( "#first" ).click(function() {
+    $(".box").removeClass( "box-bob" );
+    $(".box").addClass( "box-big" );
+    $(".box").html("Woohooo you clicked Sam!");
+  })
+
+  $( "#second" ).click(function() {
+    $(".box").removeClass( "box-big" );
+    $(".box").addClass( "box-bob" );
+    $(".box").html("Woohooo you clicked Bob!");
+  })
+
+  $( "#hide" ).click(function() {
+    $(".box").fadeOut(1000);
+  })
+
+  $( "#show" ).click(function() {
+    $(".box").fadeIn(1000);
+  })
+
+    });
+</script>
+  </body>
+</html>
