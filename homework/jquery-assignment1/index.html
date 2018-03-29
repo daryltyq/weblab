@@ -4,28 +4,51 @@
     <meta charset="utf-8">
     <title>How to Website</title>
     <link rel="stylesheet" href="css/master.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
 
-<div class="box">
-  Instructions go here!
+<div class="main-nav">
+  <a href="#" id="first">First Step</a> | <a href="#" id="second">Second Step</a> | <a href="#" id="third">Third Step</a></h1>
 </div>
+
 <br>
-<a href="#" id="first">First Step</a> | <a href="#" id="second">Second Step</a> | <a href="#" id="hide">Hide</a> | <a href="#" id="show">Show</a>
+
+<div class="content">
+  <h2 id="title">content</h2>
+  <div id="text"></div>
+  <img src="images/Orange-County.jpg" alt="" id="myimg">
+</div>
+
+<br>
+
+<div class="bottom-nav">
+  <a href="#" id="hide">Hide</a> | <a href="#" id="show">Show</a>
+</div>
 
 <script type="text/javascript">
 $(document).ready(function(){
 
-  $( "#first" ).click(function() {
-    $(".box").removeClass( "box-bob" );
-    $(".box").addClass( "box-big" );
-    $(".box").html("Woohooo you clicked Sam!");
+  $("#first").click(function() {
+    $(".content").removeClass( "content" );
+    $(".content").addClass( "content-first" );
+    $("#text").html("Woohooo you clicked First!");
+    $("#myimg").attr("src", "images/xxxxx.jpg");
   })
 
   $( "#second" ).click(function() {
-    $(".box").removeClass( "box-big" );
-    $(".box").addClass( "box-bob" );
-    $(".box").html("Woohooo you clicked Bob!");
+    $(".box").removeClass( "content-first" );
+    $(".box").addClass( "content-second" );
+    $(".box").html("Woohooo you clicked Second!");
+  })
+
+  $( "#third" ).click(function() {
+    $(".box").removeClass( "content-second" );
+    $(".box").addClass( "content-third" );
+    $(".box").html("Woohooo you clicked Third!");
   })
 
   $( "#hide" ).click(function() {
