@@ -12,17 +12,17 @@
   <body>
 
 <div class="main-nav">
-  <a href="#" id="first">Orange County</a> | <a href="#" id="second">Los Angeles</a> | <a href="#" id="third">Miami</a></h1>
+  <a href="#" id="home">Home</a> |  <a href="#" id="first">Orange County</a> | <a href="#" id="second">Los Angeles</a> | <a href="#" id="third">Miami</a></h1>
 
 <br>
 
 <div class="content">
-  <h2 id="title">My journey as an artist</h2>
+  <h2 id="title">Journey as an artist</h2>
   <div id="text"></div>
   <img src="images/Orange-County.jpg" alt="" id="myimg">
-  <div class="description">
+  <h3 id="d1">
     Here's an interactive story about my progression as a DJ throughout my 4 years in the United States. I've lived in three different cities, and two coasts; east & west.
-    The specific cities that I've lived in have had a major impact in my journey.
+    The specific cities that I've lived in have had a major influence in my journey.
   </div>
 </div>
 
@@ -32,26 +32,36 @@
   <a href="#" id="hide">Hide</a> | <a href="#" id="show">Show</a>
 </div>
 
+
 <script type="text/javascript">
 $(document).ready(function(){
 
-  $("#first").click(function() {
+  $("#home").click(function() {
     $(".content").removeClass( "content" );
-    $(".content").addClass( "content-first" );
-    $("#text").html("Woohooo you clicked First!");
-    $("#myimg").attr("src", "images/Orange-County.jpg");
+    $(".content").addClass( "content" );
+    // $("#text").html("Woohooo you clicked First!");
+    // $("").attr("src", "images/denon.jpg");
+  })
+
+  $("#first").click(function() {
+    // $(".content").removeClass( "content" );
+    // $(".content").addClass( "content-first" );
+    $("#title").html("Orange County");
+    $("#myimg").attr("src", "images/denon.jpg");
   })
 
   $( "#second" ).click(function() {
-    $(".box").removeClass( "content-first" );
-    $(".box").addClass( "content-second" );
-    $(".box").html("Woohooo you clicked Second!");
+    $(".content").removeClass( "" );
+    $(".content").addClass( "" );
+    $("#title").html("Los Angeles");
+    $("#myimg").attr("src", "images/xxx.jpg");
   })
 
   $( "#third" ).click(function() {
-    $(".box").removeClass( "content-second" );
-    $(".box").addClass( "content-third" );
-    $(".box").html("Woohooo you clicked Third!");
+    $(".content").removeClass( "" );
+    $(".content").addClass( "" );
+    $("#title").html("Miami");
+    $("#myimg").attr("src", "images/xxx.jpg");
   })
 
   $( "#hide" ).click(function() {

@@ -27,7 +27,7 @@
 .content {
   background: teal;
   margin: 5px;
-  width: 600px;
+  /* width: 600px; */
   height: 600px;
 }
 
@@ -51,9 +51,8 @@
   padding-top: 20px;
 }
 
-.description {
+#d1 {
   font-size: 15px;
   color: white;
   padding: 5px;
-
 }
