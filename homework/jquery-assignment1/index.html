@@ -18,12 +18,13 @@
 
 <div class="content">
   <h2 id="title">Journey as an artist</h2>
-  <!-- <div id="text"></div> -->
+  <div id="text">
   <img src="images/hollywood.jpg" alt="" id="myimg">
   <img src="images/edc2.jpg" alt="" id="myimg2">
   <h3 id="d1">
     Here's an interactive story about my progression as a DJ throughout my 4 years in the United States. I've lived in three different cities, and two coasts; east & west.
     The specific cities that I've lived in have had a major influence in my journey.
+  </h3>
   </div>
 </div>
 
@@ -39,8 +40,9 @@
 $(document).ready(function(){
 
   $("#first").click(function() {
-    // $(".content").removeClass( "content" );
-    // $(".content").addClass( "content-first" );
+    $(".content").removeClass( "box-2" );
+    $(".content").addClass( "box-1" );
+    $(".content").css("background-color", "orange");
     $("#title").html("Orange County");
     $("#myimg").attr("src", "images/Orange-County.jpg");
     $("#myimg2").attr("src", "images/denon.jpg");
@@ -48,8 +50,9 @@ $(document).ready(function(){
   })
 
   $( "#second" ).click(function() {
-    // $(".content").removeClass( "" );
-    // $(".content").addClass( "" );
+    $(".content").removeClass( "box-1" );
+    $(".content").addClass( "box-2" );
+    $(".content").css("background-color", "skyblue");
     $("#title").html("Los Angeles");
     $("#myimg").attr("src", "images/edc.jpg");
     $("#myimg2").attr("src", "images/LA.jpg");
@@ -57,8 +60,9 @@ $(document).ready(function(){
   })
 
   $( "#third" ).click(function() {
-    // $(".content").removeClass( "" );
-    // $(".content").addClass( "" );
+    $(".content").removeClass( "box-2" );
+    $(".content").addClass( "box-1" );
+    $(".content").css("background-color", "green");
     $("#title").html("Miami");
     $("#myimg").attr("src", "images/me1.jpg");
     $("#myimg2").attr("src", "images/me2.jpg");
