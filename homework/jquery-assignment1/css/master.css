@@ -53,16 +53,19 @@
   font-size: 15px;
   color: white;
   padding-bottom: 20px;
+  margin-left: 20px;
 }
 
 #myimg {
   border-style: solid;
   border-radius: 55px;
+  margin-left: 25px;
 }
 
 #myimg2 {
   border-style: solid;
   border-radius: 55px;
+  margin-left: 50px;
 }
 
 .box-1 {
