@@ -1,0 +1,20 @@
+#head {
+  font-family: fantasy;
+  text-align: center;
+  color: orange;
+}
+
+#text {
+  font-family: cursive;
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  text-decoration: none;
+}
+
+.ul {
+  text-align: center;
+  text-decoration: none;
+}
